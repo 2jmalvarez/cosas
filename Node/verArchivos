@@ -1,0 +1,4 @@
+fs = require("fs");
+archivos = fs.readdirSync("./")
+arc = JSON.stringify(archivos)
+fs.writeFileSync('archivos.txt', arc)
